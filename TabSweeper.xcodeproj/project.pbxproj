@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		370C33D2139AB62A0075CD30 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370C33D1139AB62A0075CD30 /* Cocoa.framework */; };
+		370C33D4139AB62B0075CD30 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370C33D3139AB62A0075CD30 /* MacRuby.framework */; };
+		370C33DB139AB62B0075CD30 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 370C33D9139AB62B0075CD30 /* InfoPlist.strings */; };
+		370C33DE139AB62B0075CD30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 370C33DD139AB62B0075CD30 /* main.m */; };
+		370C33E2139AB62B0075CD30 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 370C33E0139AB62B0075CD30 /* MainMenu.xib */; };
+		370C33E5139AB62B0075CD30 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 370C33E4139AB62B0075CD30 /* rb_main.rb */; };
+		370C33E7139AB62B0075CD30 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 370C33E6139AB62B0075CD30 /* AppDelegate.rb */; };
+		370C33F7139ACB1A0075CD30 /* TSDestinationManager.rb in Resources */ = {isa = PBXBuildFile; fileRef = 370C33F6139ACB1A0075CD30 /* TSDestinationManager.rb */; };
+		370C33F9139ACC550075CD30 /* TSDestination.rb in Resources */ = {isa = PBXBuildFile; fileRef = 370C33F8139ACC550075CD30 /* TSDestination.rb */; };
+		370C33FB139AD6860075CD30 /* TSTab.rb in Resources */ = {isa = PBXBuildFile; fileRef = 370C33FA139AD6860075CD30 /* TSTab.rb */; };
+		370C3467139BD8750075CD30 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 370C3466139BD8750075CD30 /* Preferences.xib */; };
+		370C3469139BDBFB0075CD30 /* TSPreferencesController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 370C3468139BDBFB0075CD30 /* TSPreferencesController.rb */; };
+		370C3485139BEBC30075CD30 /* Preferences.rb in Resources */ = {isa = PBXBuildFile; fileRef = 370C3484139BEBC30075CD30 /* Preferences.rb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		370C33CD139AB62A0075CD30 /* TabSweeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabSweeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		370C33D1139AB62A0075CD30 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		370C33D3139AB62A0075CD30 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
+		370C33D8139AB62B0075CD30 /* TabSweeper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TabSweeper-Info.plist"; sourceTree = "<group>"; };
+		370C33DA139AB62B0075CD30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		370C33DC139AB62B0075CD30 /* TabSweeper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TabSweeper-Prefix.pch"; sourceTree = "<group>"; };
+		370C33DD139AB62B0075CD30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		370C33E1139AB62B0075CD30 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		370C33E4139AB62B0075CD30 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		370C33E6139AB62B0075CD30 /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+		370C33F6139ACB1A0075CD30 /* TSDestinationManager.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = TSDestinationManager.rb; sourceTree = "<group>"; };
+		370C33F8139ACC550075CD30 /* TSDestination.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = TSDestination.rb; sourceTree = "<group>"; };
+		370C33FA139AD6860075CD30 /* TSTab.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = TSTab.rb; sourceTree = "<group>"; };
+		370C3466139BD8750075CD30 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		370C3468139BDBFB0075CD30 /* TSPreferencesController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = TSPreferencesController.rb; sourceTree = "<group>"; };
+		370C3484139BEBC30075CD30 /* Preferences.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Preferences.rb; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		370C33CA139AB62A0075CD30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				370C33D2139AB62A0075CD30 /* Cocoa.framework in Frameworks */,
+				370C33D4139AB62B0075CD30 /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		370C33C2139AB62A0075CD30 = {
+			isa = PBXGroup;
+			children = (
+				370C33D6139AB62B0075CD30 /* TabSweeper */,
+				370C33D0139AB62A0075CD30 /* Frameworks */,
+				370C33CE139AB62A0075CD30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		370C33CE139AB62A0075CD30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				370C33CD139AB62A0075CD30 /* TabSweeper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		370C33D0139AB62A0075CD30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				370C33D1139AB62A0075CD30 /* Cocoa.framework */,
+				370C33D3139AB62A0075CD30 /* MacRuby.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		370C33D6139AB62B0075CD30 /* TabSweeper */ = {
+			isa = PBXGroup;
+			children = (
+				370C33E6139AB62B0075CD30 /* AppDelegate.rb */,
+				370C33F6139ACB1A0075CD30 /* TSDestinationManager.rb */,
+				370C3468139BDBFB0075CD30 /* TSPreferencesController.rb */,
+				370C3484139BEBC30075CD30 /* Preferences.rb */,
+				370C33F8139ACC550075CD30 /* TSDestination.rb */,
+				370C33FA139AD6860075CD30 /* TSTab.rb */,
+				370C33DF139AB62B0075CD30 /* Resources */,
+				370C33E3139AB62B0075CD30 /* Other Sources */,
+				370C33D7139AB62B0075CD30 /* Supporting Files */,
+			);
+			path = TabSweeper;
+			sourceTree = "<group>";
+		};
+		370C33D7139AB62B0075CD30 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				370C33D8139AB62B0075CD30 /* TabSweeper-Info.plist */,
+				370C33D9139AB62B0075CD30 /* InfoPlist.strings */,
+				370C33DC139AB62B0075CD30 /* TabSweeper-Prefix.pch */,
+				370C33DD139AB62B0075CD30 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		370C33DF139AB62B0075CD30 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				370C33E0139AB62B0075CD30 /* MainMenu.xib */,
+				370C3466139BD8750075CD30 /* Preferences.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		370C33E3139AB62B0075CD30 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				370C33E4139AB62B0075CD30 /* rb_main.rb */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		370C33D5139AB62B0075CD30 /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--compile --embed";
+			buildConfigurationList = 370C33ED139AB62B0075CD30 /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/macruby_deploy;
+			dependencies = (
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		370C33CC139AB62A0075CD30 /* TabSweeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 370C33EA139AB62B0075CD30 /* Build configuration list for PBXNativeTarget "TabSweeper" */;
+			buildPhases = (
+				370C33C9139AB62A0075CD30 /* Sources */,
+				370C33CA139AB62A0075CD30 /* Frameworks */,
+				370C33CB139AB62A0075CD30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TabSweeper;
+			productName = TabSweeper;
+			productReference = 370C33CD139AB62A0075CD30 /* TabSweeper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		370C33C4139AB62A0075CD30 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 370C33C7139AB62A0075CD30 /* Build configuration list for PBXProject "TabSweeper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 370C33C2139AB62A0075CD30;
+			productRefGroup = 370C33CE139AB62A0075CD30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				370C33CC139AB62A0075CD30 /* TabSweeper */,
+				370C33D5139AB62B0075CD30 /* Deployment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		370C33CB139AB62A0075CD30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				370C33DB139AB62B0075CD30 /* InfoPlist.strings in Resources */,
+				370C33E2139AB62B0075CD30 /* MainMenu.xib in Resources */,
+				370C33E5139AB62B0075CD30 /* rb_main.rb in Resources */,
+				370C33E7139AB62B0075CD30 /* AppDelegate.rb in Resources */,
+				370C33F7139ACB1A0075CD30 /* TSDestinationManager.rb in Resources */,
+				370C33F9139ACC550075CD30 /* TSDestination.rb in Resources */,
+				370C33FB139AD6860075CD30 /* TSTab.rb in Resources */,
+				370C3467139BD8750075CD30 /* Preferences.xib in Resources */,
+				370C3469139BDBFB0075CD30 /* TSPreferencesController.rb in Resources */,
+				370C3485139BEBC30075CD30 /* Preferences.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		370C33C9139AB62A0075CD30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				370C33DE139AB62B0075CD30 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		370C33D9139AB62B0075CD30 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				370C33DA139AB62B0075CD30 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		370C33E0139AB62B0075CD30 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				370C33E1139AB62B0075CD30 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		370C33E8139AB62B0075CD30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		370C33E9139AB62B0075CD30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		370C33EB139AB62B0075CD30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TabSweeper/TabSweeper-Prefix.pch";
+				INFOPLIST_FILE = "TabSweeper/TabSweeper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		370C33EC139AB62B0075CD30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TabSweeper/TabSweeper-Prefix.pch";
+				INFOPLIST_FILE = "TabSweeper/TabSweeper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		370C33EE139AB62B0075CD30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		370C33EF139AB62B0075CD30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		370C33C7139AB62A0075CD30 /* Build configuration list for PBXProject "TabSweeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				370C33E8139AB62B0075CD30 /* Debug */,
+				370C33E9139AB62B0075CD30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		370C33EA139AB62B0075CD30 /* Build configuration list for PBXNativeTarget "TabSweeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				370C33EB139AB62B0075CD30 /* Debug */,
+				370C33EC139AB62B0075CD30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		370C33ED139AB62B0075CD30 /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				370C33EE139AB62B0075CD30 /* Debug */,
+				370C33EF139AB62B0075CD30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 370C33C4139AB62A0075CD30 /* Project object */;
+}
