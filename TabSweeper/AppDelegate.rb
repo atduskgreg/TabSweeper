@@ -8,11 +8,12 @@
 
 # TODO:
 # - figure out why multiples doesn't work
-# - move instapaper prefs to a better system
 # - generate blog post text
 # - destination for emailing to a friend (similar to blog post)
 # - search box for searching through tabs
 # - make tabs sortable by title
+# - give the ability to jump to the tab / bring tab to front
+# - multiple browser support
 
 
 framework 'ScriptingBridge'

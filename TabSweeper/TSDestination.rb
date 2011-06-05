@@ -8,6 +8,7 @@
 
 require 'rubygems'
 require 'instapaper'
+require 'erb'
 
 class TSDestination
     attr_accessor :name, :deliverator
@@ -20,7 +21,7 @@ class TSDestination
     def self.defaults
         [self.new(:name => "Close Tab", :deliverator => TSCloseTabDeliverator), 
         self.new(:name => "Instapaper", :deliverator => TSInstapperDeliverator),
-        self.new(:name => "Blog Post"),
+        self.new(:name => "Blog Post", :deliverator => TSBlogPostDeliverator),
         self.new(:name => "Email Links")]
     end
 
@@ -53,6 +54,39 @@ class TSCloseTabDeliverator < TSDeliverator
         NSLog(tab.inspect)
         tab.close
     end
+end
+
+class TSTextBasedDeliverator < TSDeliverator
+    def self.template
+        # implemented in sub-classes
+        # this should return an erb template
+        # that is ready to rendered with @tabs
+        # set to an array of TSTabs
+    end
+
+    def self.deliver_multiple(tabs)
+        @tabs = tabs
+        text = self.template.result(binding)
+
+        NSLog(text.inspect)
+        # pop up a window with the text in a selectable area
+    end
+end
+
+class TSBlogPostDeliverator < TSTextBasedDeliverator
+    
+    def self.template
+        ERB.new <<-TTT
+        <ul>
+        <% for tab in @tabs %>
+            <li><a href="<%= tab.url %>"><%= tab.title %></a></li>
+        <% end %>
+        </ul>
+        TTT
+    end
+end
+
+class TSEmailDeliverator < TSTextBasedDeliverator
 end
 
 class TSInstapperDeliverator < TSDeliverator

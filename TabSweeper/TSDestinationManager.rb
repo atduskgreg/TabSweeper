@@ -57,13 +57,16 @@ class TSDestinationManager
         
         target_destination = @destinations[row]
         
+        tabs = []
         
         rowIndexes.enumerateIndexesUsingBlock(Proc.new do |i, stop|
           
-          tab = app_delegate.open_tabs[i]          
-          target_destination.deliver(tab)
-                                              
+          tabs << app_delegate.open_tabs[i]
+                                                                                            
         end)
+        
+        target_destination.deliver_multiple(tabs)
+
         
         
         app_delegate.sync_safari        
