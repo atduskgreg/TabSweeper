@@ -22,6 +22,10 @@
 		370C3485139BEBC30075CD30 /* Preferences.rb in Resources */ = {isa = PBXBuildFile; fileRef = 370C3484139BEBC30075CD30 /* Preferences.rb */; };
 		370C3487139BF21A0075CD30 /* LinkTextEditor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 370C3486139BF21A0075CD30 /* LinkTextEditor.xib */; };
 		370C3489139BF3540075CD30 /* TSLinkTextEditorController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 370C3488139BF3540075CD30 /* TSLinkTextEditorController.rb */; };
+		370C349C139C2C3C0075CD30 /* trash_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 370C3498139C2C3B0075CD30 /* trash_icon.png */; };
+		370C349D139C2C3C0075CD30 /* blog_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 370C3499139C2C3B0075CD30 /* blog_icon.png */; };
+		370C349E139C2C3C0075CD30 /* instapaper_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 370C349A139C2C3B0075CD30 /* instapaper_icon.png */; };
+		370C349F139C2C3C0075CD30 /* email_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 370C349B139C2C3C0075CD30 /* email_icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +47,10 @@
 		370C3484139BEBC30075CD30 /* Preferences.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Preferences.rb; sourceTree = "<group>"; };
 		370C3486139BF21A0075CD30 /* LinkTextEditor.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LinkTextEditor.xib; sourceTree = "<group>"; };
 		370C3488139BF3540075CD30 /* TSLinkTextEditorController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = TSLinkTextEditorController.rb; sourceTree = "<group>"; };
+		370C3498139C2C3B0075CD30 /* trash_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trash_icon.png; sourceTree = "<group>"; };
+		370C3499139C2C3B0075CD30 /* blog_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blog_icon.png; sourceTree = "<group>"; };
+		370C349A139C2C3B0075CD30 /* instapaper_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instapaper_icon.png; sourceTree = "<group>"; };
+		370C349B139C2C3C0075CD30 /* email_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email_icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +123,10 @@
 		370C33DF139AB62B0075CD30 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				370C3498139C2C3B0075CD30 /* trash_icon.png */,
+				370C3499139C2C3B0075CD30 /* blog_icon.png */,
+				370C349A139C2C3B0075CD30 /* instapaper_icon.png */,
+				370C349B139C2C3C0075CD30 /* email_icon.png */,
 				370C33E0139AB62B0075CD30 /* MainMenu.xib */,
 				370C3486139BF21A0075CD30 /* LinkTextEditor.xib */,
 				370C3466139BD8750075CD30 /* Preferences.xib */,
@@ -206,6 +218,10 @@
 				370C3485139BEBC30075CD30 /* Preferences.rb in Resources */,
 				370C3487139BF21A0075CD30 /* LinkTextEditor.xib in Resources */,
 				370C3489139BF3540075CD30 /* TSLinkTextEditorController.rb in Resources */,
+				370C349C139C2C3C0075CD30 /* trash_icon.png in Resources */,
+				370C349D139C2C3C0075CD30 /* blog_icon.png in Resources */,
+				370C349E139C2C3C0075CD30 /* instapaper_icon.png in Resources */,
+				370C349F139C2C3C0075CD30 /* email_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

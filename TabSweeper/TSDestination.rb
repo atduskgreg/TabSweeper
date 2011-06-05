@@ -11,18 +11,29 @@ require 'instapaper'
 require 'erb'
 
 class TSDestination
-    attr_accessor :name, :deliverator
+    attr_accessor :name, :deliverator, :image_path
     
     def initialize(opts)
         @name = opts[:name]
         @deliverator = opts[:deliverator]
+        @image_path = opts[:image_path]
     end
     
     def self.defaults
-        [self.new(:name => "Close Tab", :deliverator => TSCloseTabDeliverator), 
-        self.new(:name => "Instapaper", :deliverator => TSInstapperDeliverator),
-        self.new(:name => "Blog Post", :deliverator => TSBlogPostDeliverator),
-        self.new(:name => "Email Links", :deliverator => TSEmailDeliverator)]
+    {:close     => self.new(:name => "Close Tab", 
+                            :deliverator => TSCloseTabDeliverator,
+                            :image_path => NSBundle.mainBundle.resourcePath + "/trash_icon.png"), 
+    :instapaper => self.new(:name => "Instapaper", 
+                            :deliverator => TSInstapperDeliverator,
+                            :image_path => NSBundle.mainBundle.resourcePath + "/instapaper_icon.png"),
+    
+    :blog       => self.new(:name => "Blog Post", 
+                            :deliverator => TSBlogPostDeliverator,
+                            :image_path => NSBundle.mainBundle.resourcePath + "/blog_icon.png"),
+    
+    :email      => self.new(:name => "Email Links", 
+                            :deliverator => TSEmailDeliverator,
+                            :image_path => NSBundle.mainBundle.resourcePath + "/email_icon.png")}
     end
 
     def deliver(tab)
