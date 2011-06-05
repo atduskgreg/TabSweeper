@@ -16,67 +16,9 @@ class TSDestinationManager
     end
     
     def awakeFromNib
-        # for drop events
-        # table_view.registerForDraggedTypes( ["TSTab"] )
-        
-        blog_image.setImage(NSImage.alloc.initByReferencingFile(destinations[:blog].image_path))
-        email_image.setImage(NSImage.alloc.initByReferencingFile(destinations[:email].image_path))
-        instapaper_image.setImage(NSImage.alloc.initByReferencingFile(destinations[:instapaper].image_path))
-        trash_image.setImage(NSImage.alloc.initByReferencingFile(destinations[:close].image_path))
+        instapaper_image.target_destination = destinations[:instapaper]
+        blog_image.target_destination = destinations[:blog]
+        email_image.target_destination = destinations[:email]
+        trash_image.target_destination = destinations[:close]
     end
-    
-    #def numberOfRowsInTableView(aTableView)
-    #   @destinations.length
-    #end
-    
-    #def tableView(tableView,
-    #              objectValueForTableColumn:column,
-    #              row:row)
-    #    
-    #    @destinations[row].name
-    #    
-    #end
-    
-    # drag and drop methods
-    
-    # validate a drop
-    #def tableView(tableView, 
-    #              validateDrop:info, 
-    #              proposedRow:row, 
-    #              proposedDropOperation:op)
-        
-        
-        
-    #    return NSDragOperationEvery
-    #end
-        
-    # accept a drop
-    #def tableView(tableView, 
-    #              acceptDrop:info,
-    #              row:row,
-    #              dropOperation:operation)
-        
-    #    pboard = info.draggingPasteboard
-    #    rowData = pboard.dataForType( "TSTab" )
-
-    #    rowIndexes = NSKeyedUnarchiver.unarchiveObjectWithData( rowData )
-        
-    #    target_destination = @destinations[row]
-        
-    #    tabs = []
-        
-    #    rowIndexes.enumerateIndexesUsingBlock(Proc.new do |i, stop|
-          
-    #      tabs << app_delegate.open_tabs[i]
-                                                                                            
-    #    end)
-        
-    #    target_destination.deliver_multiple(tabs)
-
-        
-        
-    #    app_delegate.sync_safari        
-    #end
-    
-    
 end
