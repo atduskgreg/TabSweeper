@@ -68,8 +68,10 @@ class TSTextBasedDeliverator < TSDeliverator
         @tabs = tabs
         text = self.template.result(binding)
 
-        NSLog(text.inspect)
-        # pop up a window with the text in a selectable area
+
+        text_editor = TSLinkTextEditorController.alloc.initWithWindowNibName( "LinkTextEditor" )
+        text_editor.text = text
+        text_editor.showWindow( self )
     end
 end
 

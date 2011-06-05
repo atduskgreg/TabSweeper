@@ -8,10 +8,14 @@
 
 
 class TSLinkTextEditorController < NSWindowController
-   attr_accessor :text_view, :copy_button, :done_button
+   attr_accessor :text_view, :copy_button, :done_button, :text
     
    def awakeFromNib
+       
+       
        NSLog("link text editor woke up")
+       
+       text_view.insertText( self.text )
    end
     
    def copy_text_to_clipboard(sender)
