@@ -22,7 +22,7 @@ class TSDestination
         [self.new(:name => "Close Tab", :deliverator => TSCloseTabDeliverator), 
         self.new(:name => "Instapaper", :deliverator => TSInstapperDeliverator),
         self.new(:name => "Blog Post", :deliverator => TSBlogPostDeliverator),
-        self.new(:name => "Email Links")]
+        self.new(:name => "Email Links", :deliverator => TSEmailDeliverator)]
     end
 
     def deliver(tab)
@@ -71,6 +71,9 @@ class TSTextBasedDeliverator < TSDeliverator
 
         text_editor = TSLinkTextEditorController.alloc.initWithWindowNibName( "LinkTextEditor" )
         text_editor.text = text
+        
+        tabs.each{|t| t.close }
+
         text_editor.showWindow( self )
     end
 end
@@ -79,16 +82,24 @@ class TSBlogPostDeliverator < TSTextBasedDeliverator
     
     def self.template
         ERB.new <<-TTT
-        <ul>
-        <% for tab in @tabs %>
-            <li><a href="<%= tab.url %>"><%= tab.title %></a></li>
-        <% end %>
-        </ul>
+<ul>
+<% for tab in @tabs %>
+  <li><a href="<%= tab.url %>"><%= tab.title %></a></li>
+<% end %>
+</ul>
         TTT
     end
 end
 
 class TSEmailDeliverator < TSTextBasedDeliverator
+    def self.template
+    ERB.new <<-TTT
+<% for tab in @tabs %>
+<%= tab.title %>
+<%= tab.url %>
+<% end %>
+    TTT
+end
 end
 
 class TSInstapperDeliverator < TSDeliverator
