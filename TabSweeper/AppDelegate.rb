@@ -7,7 +7,9 @@
 #
 
 # TODO:
+# defects:
 # - debug multiples
+# improvements:
 # - better icons/ui for destinations
 # - search box for searching through tabs
 # - make tabs sortable by title
@@ -15,6 +17,8 @@
 # - deal with being offline (i.e. gray out instapaper)
 # - multiple browser support
 # - error handling: safari not running, quits while we're running
+# - feedback on copy
+# - HOT FEATURE: automatic detecting of duplicate tabs
 
 framework 'ScriptingBridge'
 
