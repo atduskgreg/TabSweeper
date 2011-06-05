@@ -8,8 +8,7 @@
 
 # TODO:
 # - figure out why multiples doesn't work
-# - generate blog post text
-# - destination for emailing to a friend (similar to blog post)
+# - debug pasteboard copy on link editor
 # - search box for searching through tabs
 # - make tabs sortable by title
 # - give the ability to jump to the tab / bring tab to front
