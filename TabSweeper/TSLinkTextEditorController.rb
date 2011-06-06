@@ -19,7 +19,6 @@ class TSLinkTextEditorController < NSWindowController
    end
     
    def copy_text_to_clipboard(sender)
-       
        pasteBoard = NSPasteboard.generalPasteboard
        pasteBoard.declareTypes([NSStringPboardType], owner: nil)
        pasteBoard.setString(text_view.string, forType:NSStringPboardType)
