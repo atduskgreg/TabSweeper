@@ -23,6 +23,7 @@
 
 framework 'ScriptingBridge'
 
+
 class AppDelegate
     attr_accessor :window, :open_tabs, :table_view, :destination_manager
     
@@ -83,7 +84,7 @@ class AppDelegate
         # Insert code here to initialize your application
     end
     
-    def awakeFromNib
+    def awakeFromNib        
         # for drag events
         table_view.registerForDraggedTypes( ["TSTab"] )
         

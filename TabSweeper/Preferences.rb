@@ -284,6 +284,8 @@ class Preferences
   class User < Namespace
     defaults_accessor :instapaper_username, ""
     defaults_accessor :instapaper_password, ""
+    defaults_accessor :pinboard_username, ""
+    defaults_accessor :pinboard_password, ""
   end
   
   # Register the default values with NSUserDefaults.standardUserDefaults.

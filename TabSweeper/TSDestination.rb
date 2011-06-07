@@ -113,10 +113,24 @@ class TSEmailDeliverator < TSTextBasedDeliverator
 end
 end
 
+class TSPinboardDeliverator < TSDeliverator
+    def self.deliver(tab)
+        description = URI.encode( tab.title )
+        url = URI.encode( tab.url )
+    
+        auth = "#{preferences.user.pinboard_username}:#{preferences.user.pinboard_password}"
+        params = "url=#{url}&description=#{description}"
+         
+    
+        DataRequest.new.get("https://#{auth}@api.pinboard.in/v1/posts/add?#{params}") do |data|
+            NSLog(data)
+        end
+    end
+end
+
 class TSInstapperDeliverator < TSDeliverator
 
     def self.deliver(tab)
-        puts "delivering #{tab.inspect}"
     
         url = URI.parse("http://www.instapaper.com/api/add")
         req = Net::HTTP::Post.new(url.path)

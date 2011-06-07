@@ -27,6 +27,7 @@
 		370C349E139C2C3C0075CD30 /* instapaper_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 370C349A139C2C3B0075CD30 /* instapaper_icon.png */; };
 		370C349F139C2C3C0075CD30 /* email_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 370C349B139C2C3C0075CD30 /* email_icon.png */; };
 		370C34A1139C2F830075CD30 /* TSDestinationImage.rb in Resources */ = {isa = PBXBuildFile; fileRef = 370C34A0139C2F820075CD30 /* TSDestinationImage.rb */; };
+		37D49547139DBFA2002F9DBA /* DataRequest.rb in Resources */ = {isa = PBXBuildFile; fileRef = 37D49546139DBFA2002F9DBA /* DataRequest.rb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		370C349A139C2C3B0075CD30 /* instapaper_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instapaper_icon.png; sourceTree = "<group>"; };
 		370C349B139C2C3C0075CD30 /* email_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email_icon.png; sourceTree = "<group>"; };
 		370C34A0139C2F820075CD30 /* TSDestinationImage.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = TSDestinationImage.rb; sourceTree = "<group>"; };
+		37D49546139DBFA2002F9DBA /* DataRequest.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = DataRequest.rb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				370C33F6139ACB1A0075CD30 /* TSDestinationManager.rb */,
 				370C3468139BDBFB0075CD30 /* TSPreferencesController.rb */,
 				370C3484139BEBC30075CD30 /* Preferences.rb */,
+				37D49546139DBFA2002F9DBA /* DataRequest.rb */,
 				370C34A0139C2F820075CD30 /* TSDestinationImage.rb */,
 				370C33F8139ACC550075CD30 /* TSDestination.rb */,
 				370C3488139BF3540075CD30 /* TSLinkTextEditorController.rb */,
@@ -226,6 +229,7 @@
 				370C349E139C2C3C0075CD30 /* instapaper_icon.png in Resources */,
 				370C349F139C2C3C0075CD30 /* email_icon.png in Resources */,
 				370C34A1139C2F830075CD30 /* TSDestinationImage.rb in Resources */,
+				37D49547139DBFA2002F9DBA /* DataRequest.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +361,7 @@
 				370C33EC139AB62B0075CD30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		370C33ED139AB62B0075CD30 /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
 			isa = XCConfigurationList;
@@ -365,6 +370,7 @@
 				370C33EF139AB62B0075CD30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
