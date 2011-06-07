@@ -13,11 +13,12 @@
 # - destination targets should highlight when dragged over
 # - search box for searching through tabs
 # - make tabs sortable by title
+# - pinboard integration
 # - give the ability to jump to the tab / bring tab to front
 # - deal with being offline (i.e. gray out instapaper)
-# - error handling: safari not running, quits while we're running
 # - feedback on copy
-# - add firefox support
+# - add firefox support (except their applescript support sucks)
+# - add an icon and column to show which browser the tab is in
 # - HOT FEATURE: automatic detecting of duplicate tabs
 
 framework 'ScriptingBridge'
@@ -53,6 +54,18 @@ class AppDelegate
     def refreshTabsFromChrome
         getTabsFromBrowserWithBundleIdentifier("com.google.Chrome")
     end
+    
+    # one day maybe: right now their apple script support sucks. No obvious way to get tabs.
+    #def refreshTabsFromFirefox
+        #result = []
+        
+        #browser = SBApplication.applicationWithBundleIdentifier( "org.mozilla.Firefox" )
+        #NSLog(browser.windows.first.class.inspect)
+        #NSLog(browser.windows.collect{|w| w.curl}.inspect)
+        #NSLog(browser.windows.collect{|w| w.tabs.collect{|t| "#{t.title} - #{t.url}"}}.inspect)
+
+    #   result
+    #end
     
     def sync_safari
 
