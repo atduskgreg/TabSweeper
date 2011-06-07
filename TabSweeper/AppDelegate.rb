@@ -10,6 +10,7 @@
 # defects:
 # - debug multiples
 # improvements:
+# - either save button should save all prefs?
 # - destination targets should highlight when dragged over
 # - search box for searching through tabs
 # - make tabs sortable by title

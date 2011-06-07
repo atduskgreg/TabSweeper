@@ -21,19 +21,18 @@ class TSDestination
     
     def self.defaults
     {:close     => self.new(:name => "Close Tab", 
-                            :deliverator => TSCloseTabDeliverator,
-                            :image_path => NSBundle.mainBundle.resourcePath + "/trash_icon.png"), 
+                            :deliverator => TSCloseTabDeliverator), 
     :instapaper => self.new(:name => "Instapaper", 
-                            :deliverator => TSInstapperDeliverator,
-                            :image_path => NSBundle.mainBundle.resourcePath + "/instapaper_icon.png"),
+                            :deliverator => TSInstapperDeliverator),
+    
+    :pinboard   => self.new(:name => "Pinboard", 
+                            :deliverator => TSPinboardDeliverator),
     
     :blog       => self.new(:name => "Blog Post", 
-                            :deliverator => TSBlogPostDeliverator,
-                            :image_path => NSBundle.mainBundle.resourcePath + "/blog_icon.png"),
+                            :deliverator => TSBlogPostDeliverator),
     
     :email      => self.new(:name => "Email Links", 
-                            :deliverator => TSEmailDeliverator,
-                            :image_path => NSBundle.mainBundle.resourcePath + "/email_icon.png")}
+                            :deliverator => TSEmailDeliverator)}
     end
 
     def deliver(tab)
@@ -125,6 +124,8 @@ class TSPinboardDeliverator < TSDeliverator
         DataRequest.new.get("https://#{auth}@api.pinboard.in/v1/posts/add?#{params}") do |data|
             NSLog(data)
         end
+
+        tab.close
     end
 end
 
