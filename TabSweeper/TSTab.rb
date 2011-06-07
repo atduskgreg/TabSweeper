@@ -31,6 +31,7 @@ class TSTab
 
     
     def close
+        NSLog("closing")
         @window.tabs.removeObject(@tab)
     end
 end

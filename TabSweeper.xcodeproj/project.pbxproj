@@ -29,6 +29,7 @@
 		370C34A1139C2F830075CD30 /* TSDestinationImage.rb in Resources */ = {isa = PBXBuildFile; fileRef = 370C34A0139C2F820075CD30 /* TSDestinationImage.rb */; };
 		37D49547139DBFA2002F9DBA /* DataRequest.rb in Resources */ = {isa = PBXBuildFile; fileRef = 37D49546139DBFA2002F9DBA /* DataRequest.rb */; };
 		37D4954A139DC5F4002F9DBA /* pinboard_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 37D49549139DC5F4002F9DBA /* pinboard_icon.png */; };
+		37D4954C139DD5D3002F9DBA /* TSKeyboardControlView.rb in Resources */ = {isa = PBXBuildFile; fileRef = 37D4954B139DD5D2002F9DBA /* TSKeyboardControlView.rb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		370C34A0139C2F820075CD30 /* TSDestinationImage.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = TSDestinationImage.rb; sourceTree = "<group>"; };
 		37D49546139DBFA2002F9DBA /* DataRequest.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = DataRequest.rb; sourceTree = "<group>"; };
 		37D49549139DC5F4002F9DBA /* pinboard_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinboard_icon.png; sourceTree = "<group>"; };
+		37D4954B139DD5D2002F9DBA /* TSKeyboardControlView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = TSKeyboardControlView.rb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				370C3468139BDBFB0075CD30 /* TSPreferencesController.rb */,
 				370C3484139BEBC30075CD30 /* Preferences.rb */,
 				37D49546139DBFA2002F9DBA /* DataRequest.rb */,
+				37D4954B139DD5D2002F9DBA /* TSKeyboardControlView.rb */,
 				370C34A0139C2F820075CD30 /* TSDestinationImage.rb */,
 				370C33F8139ACC550075CD30 /* TSDestination.rb */,
 				370C3488139BF3540075CD30 /* TSLinkTextEditorController.rb */,
@@ -234,6 +237,7 @@
 				370C34A1139C2F830075CD30 /* TSDestinationImage.rb in Resources */,
 				37D49547139DBFA2002F9DBA /* DataRequest.rb in Resources */,
 				37D4954A139DC5F4002F9DBA /* pinboard_icon.png in Resources */,
+				37D4954C139DD5D3002F9DBA /* TSKeyboardControlView.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

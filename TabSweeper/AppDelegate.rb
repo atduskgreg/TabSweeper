@@ -10,6 +10,7 @@
 # defects:
 # - debug multiples
 # improvements:
+# - make it easier to see and scan for individual tabs
 # - either save button should save all prefs?
 # - destination targets should highlight when dragged over
 # - search box for searching through tabs
@@ -73,6 +74,8 @@ class AppDelegate
 
         @open_tabs = refreshTabsFromChrome + refreshTabsFromSafari
         
+        NSLog("open: #{@open_tabs.length}")
+        
         table_view.reloadData
         table_view.setNeedsDisplay(true)
     end
@@ -100,6 +103,7 @@ class AppDelegate
         pref_controller.showWindow( self )
     end
     
+       
     # tableView delegate stuff
     
     def numberOfRowsInTableView(aTableView)

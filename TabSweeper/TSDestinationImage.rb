@@ -31,10 +31,12 @@ class TSDestinationImage < NSImageView
         tabs = []
         
         rowIndexes.enumerateIndexesUsingBlock(Proc.new do |i, stop|
-        
+          NSLog(i.inspect)
           tabs << app_delegate.open_tabs[i]
         
         end)
+        
+        NSLog(tabs.length.inspect)
         
         target_destination.deliver_multiple(tabs)
         

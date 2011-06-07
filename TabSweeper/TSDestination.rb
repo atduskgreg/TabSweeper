@@ -61,7 +61,6 @@ end
 
 class TSCloseTabDeliverator < TSDeliverator
     def self.deliver(tab)
-        NSLog(tab.inspect)
         tab.close
     end
 end
