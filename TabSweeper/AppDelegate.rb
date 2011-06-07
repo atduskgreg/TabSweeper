@@ -14,7 +14,7 @@
 # - destination targets should highlight when dragged over
 # - search box for searching through tabs
 # - make tabs sortable by title
-# - pinboard integration
+# - add interface for adding pinboard tags, etc.
 # - give the ability to jump to the tab / bring tab to front
 # - deal with being offline (i.e. gray out instapaper)
 # - feedback on copy
