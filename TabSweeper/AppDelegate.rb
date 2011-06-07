@@ -15,9 +15,9 @@
 # - make tabs sortable by title
 # - give the ability to jump to the tab / bring tab to front
 # - deal with being offline (i.e. gray out instapaper)
-# - multiple browser support
 # - error handling: safari not running, quits while we're running
 # - feedback on copy
+# - add firefox support
 # - HOT FEATURE: automatic detecting of duplicate tabs
 
 framework 'ScriptingBridge'
@@ -25,40 +25,39 @@ framework 'ScriptingBridge'
 class AppDelegate
     attr_accessor :window, :open_tabs, :table_view, :destination_manager
     
-    def refreshTabsFromSafari
-        safari = SBApplication.applicationWithBundleIdentifier("com.apple.Safari")
-        
-        windows = safari.windows
-        
-        @open_safari_tabs = []
 
-        windows.each do |window|
-            window.tabs.each do |tab|
-                @open_safari_tabs << TSTab.new({:window => window, :tab => tab, :source => :safari})
+    def getTabsFromBrowserWithBundleIdentifier( bundle_id )
+        browser = SBApplication.applicationWithBundleIdentifier( bundle_id )
+        
+        result = []
+
+        if(browser.isRunning)
+        
+            windows = browser.windows
+        
+        
+            windows.each do |window|
+                window.tabs.each do |tab|
+                    result << TSTab.new({:window => window, :tab => tab, :source_bundle_id => bundle_id})
+                end
             end
         end
+        
+        result
     end
-        
+    
+    def refreshTabsFromSafari
+        getTabsFromBrowserWithBundleIdentifier("com.apple.Safari")
+    end
+    
     def refreshTabsFromChrome
-        chrome = SBApplication.applicationWithBundleIdentifier("com.google.Chrome")
-        
-        windows = chrome.windows
-        
-        @open_chrome_tabs = []
-        
-        windows.each do |window|
-            window.tabs.each do |tab|
-                @open_chrome_tabs << TSTab.new({:window => window, :tab => tab, :source => :chrome})
-            end
-        end
+        getTabsFromBrowserWithBundleIdentifier("com.google.Chrome")
     end
     
     def sync_safari
 
-        refreshTabsFromChrome
-        refreshTabsFromSafari
+        @open_tabs = refreshTabsFromChrome + refreshTabsFromSafari
         
-        @open_tabs = @open_safari_tabs + @open_chrome_tabs
         table_view.reloadData
         table_view.setNeedsDisplay(true)
     end
