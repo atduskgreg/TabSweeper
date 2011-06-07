@@ -30,18 +30,35 @@ class AppDelegate
         
         windows = safari.windows
         
-        @open_tabs = []
+        @open_safari_tabs = []
+
+        windows.each do |window|
+            window.tabs.each do |tab|
+                @open_safari_tabs << TSTab.new({:window => window, :tab => tab, :source => :safari})
+            end
+        end
+    end
+        
+    def refreshTabsFromChrome
+        chrome = SBApplication.applicationWithBundleIdentifier("com.google.Chrome")
+        
+        windows = chrome.windows
+        
+        @open_chrome_tabs = []
         
         windows.each do |window|
             window.tabs.each do |tab|
-                @open_tabs << TSTab.new({:window => window, :tab => tab})
+                @open_chrome_tabs << TSTab.new({:window => window, :tab => tab, :source => :chrome})
             end
         end
-        
     end
     
     def sync_safari
+
+        refreshTabsFromChrome
         refreshTabsFromSafari
+        
+        @open_tabs = @open_safari_tabs + @open_chrome_tabs
         table_view.reloadData
         table_view.setNeedsDisplay(true)
     end

@@ -8,15 +8,21 @@
 
 
 class TSTab 
-    attr_accessor :window, :tab
+    attr_accessor :window, :tab, :source
     
     def initialize(opts)
         @window = opts[:window]
         @tab = opts[:tab]
+        @source = opts[:source]
     end
     
     def title
-        @tab.name
+        case source
+        when :safari
+            @tab.name
+        when :chrome
+            @tab.title
+        end
     end
     
     def url
